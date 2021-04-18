@@ -12,7 +12,7 @@ menu.addEventListener("click", () => {
 
 // Section 2 video
 const video = document.querySelector(".video");
-const btn = document.querySelector(".buttons");
+const btn = document.querySelector(".buttons button i");
 const bar = document.querySelector(".video-bar");
 
 const playPause = () => {
@@ -21,7 +21,7 @@ const playPause = () => {
     btn.className = "far fa-pause-circle";
     video.style.opacity = ".7";
   } else {
-    video.play();
+    video.pause();
     btn.className = "far fa-play-circle";
     video.style.opacity = ".3";
   }
